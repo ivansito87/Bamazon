@@ -1,0 +1,10 @@
+## Ignore Mac DS_Store files
+## Ignore .env file 
+## Ignore node_modules
+
+```
+node_modules
+.DS_Store
+.env
+
+```
