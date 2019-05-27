@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light static-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand" href="/"><img class="navbar-brand" src="images/bamazon.png" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"
+                    style="background-image: url('https://i1.wp.com/doist.com/blog/wp-content/uploads/sites/3/2016/10/Banner_image@2x.png?fit=1920%2C1620&quality=85&strip=all&ssl=1')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-3">Deals and New Products Every Day</h3>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F801805842%2F960x0.jpg%3Ffit%3Dscale')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-3">Become A Member and get Special Discounts</h3>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/03/p-1-alexa-laugh-1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-3">Look no further you can find it here</h3>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card border-0 shadow my-5">
+                    <div class="card-body p-5">
+                        <h1 id="tCaption">Search Inventory</h1>
+                        <div class="tbl-header">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <thead>
+                                    <tr>
+                                        <th class="itemId">Id</th>
+                                        <th>Product Name</th>
+                                        <th>Department</th>
+                                        <th>Price</th>
+                                        <th>In Stock</th>
+                                        <th>Buy now</th>
+                                        <th>Qty:</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="tbl-content">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody id="products">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            <h1 class="py-2">Shopping Cart</h1>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-warning">Submit Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            <h1 class="py-2">Shopping Cart</h1>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-warning">Submit Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- follow me template -->
+
+
+    <div class="made-with-love">
+        <!-- Made with
+        <i>♥</i> by
+        <a target="_blank" href="https://ivanrendon.dev">Ivan Rendon</a> -->
+        <a id="connect" class="text-align-center mx-2" href="https://github.com/ivansito87" target="_blank">
+            <i class="fab fa-github fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://gt.bootcampcontent.com/ivan.rendon"
+            target="_blank">
+            <i class="fab fa-gitlab fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://www.facebook.com/ivan.rendon.319" target="_blank">
+            <i class="fab fa-facebook fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://www.snapchat.com/add/alexivansito" target="_blank">
+            <i class="fab fa-snapchat fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://www.pinterest.com/ivansito87/" target="_blank">
+            <i class="fab fa-pinterest fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://twitter.com/IvanRen19266618" target="_blank">
+            <i class="fab fa-twitter fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://www.linkedin.com/in/ivan-rendon-368b53174/"
+            target="_blank">
+            <i class="fab fa-linkedin fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2"
+            href="https://stackoverflow.com/users/11216672/ivansito87?tab=profile" target="_blank">
+            <i class="fab fa-stack-overflow fa-md"></i></a>
+        <a id="connect" class="text-align-center mx-2" href="https://codepen.io/ivansito87/" target="_blank">
+            <i class="fab fa-codepen fa-md"></i></a>
+        <p class="h6 p-1 m-0 text-center text-dark">Copyright &copy; Ivan Rendon 2019</p>
+
+    </div>
+
+
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

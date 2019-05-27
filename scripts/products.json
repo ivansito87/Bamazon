@@ -1,0 +1,574 @@
+[
+    {
+        "product_name": "DELUXE COOKED HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 102
+    },
+    {
+        "product_name": "DELUXE LOW-SODIUM COOKED HAM ",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 159
+    },
+    {
+        "product_name": "DELUXE LOW-SODIUM WHOLE HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 105
+    },
+    {
+        "product_name": "SMOKED VIRGINA HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 156
+    },
+    {
+        "product_name": "HONEY MAPLE HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 150
+    },
+    {
+        "product_name": "HONEY MAPLE HAM 1/2",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 151
+    },
+    {
+        "product_name": "BAVARIAN SMOKED HAM ",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 166
+    },
+    {
+        "product_name": "BLACK FOREST BEECHWOOD HAM L/S",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "TAVERN SMOKED HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 158
+    },
+    {
+        "product_name": "ROSEMARY HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 173
+    },
+    {
+        "product_name": "PESTO PARMESAN HAM",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 189
+    },
+    {
+        "product_name": "DELI SWEET SLICE SMOKED HAM",
+        "department_name": "groceries",
+        "price": 4.95,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "HABANERO HAM ",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "ITALIAN RSTD HAM (PROSC COTTO)",
+        "department_name": "groceries",
+        "price": 5.79,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "SUNDAY HOT HAM (SWEET SLICE)",
+        "department_name": "groceries",
+        "price": 4.95,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "DELUXE ROAST BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 235
+    },
+    {
+        "product_name": "LONDONPORT ROAST BEEF",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 915
+    },
+    {
+        "product_name": "ITALIAN ROAST BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 232
+    },
+    {
+        "product_name": "SEASOND ROAST BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 246
+    },
+    {
+        "product_name": "CORNED BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.50,
+        "stock_quantity": 197
+    },
+    {
+        "product_name": "PASTRAMI BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.50,
+        "stock_quantity": 205
+    },
+    {
+        "product_name": "LONDON BROIL ROAST BEEF",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 120
+    },
+    {
+        "product_name": "MESQUITE SMOKEHOUSE BRISKET ",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 120
+    },
+    {
+        "product_name": "CAJUN ROAST BEEF TOP-ROUND",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 227
+    },
+    {
+        "product_name": "WELL DONE SEASONED ROAST BEEF",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 120
+    },
+    {
+        "product_name": "1ST CUT CORNED BEEF BRISKET",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 206
+    },
+    {
+        "product_name": "1ST CUT PASTRAMI BRISKET",
+        "department_name": "groceries",
+        "price": 6.95,
+        "stock_quantity": 210
+    },
+    {
+        "product_name": "NAVEL PASTRAMI FS serve hot",
+        "department_name": "groceries",
+        "price": 5.75,
+        "stock_quantity": 341
+    },
+    {
+        "product_name": "OVENGOLD TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.00,
+        "stock_quantity": 278
+    },
+    {
+        "product_name": "CRACKED PEPPERMILL TURKEY",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 276
+    },
+    {
+        "product_name": "MAPLE GLAZED HONEY COAT TURKEY",
+        "department_name": "groceries",
+        "price": 5.30,
+        "stock_quantity": 270
+    },
+    {
+        "product_name": "MESQUITE SMOKED TURKEY",
+        "department_name": "groceries",
+        "price": 5.00,
+        "stock_quantity": 294
+    },
+    {
+        "product_name": "BLACK FOREST SMOKED TURKEY",
+        "department_name": "groceries",
+        "price": 5.00,
+        "stock_quantity": 297
+    },
+    {
+        "product_name": "LOW-SODIUM TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 4.70,
+        "stock_quantity": 421
+    },
+    {
+        "product_name": "PASTRAMI SEASONED TURKEY",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 275
+    },
+    {
+        "product_name": "SALSALITO TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 284
+    },
+    {
+        "product_name": "CAJUN TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.15,
+        "stock_quantity": 296
+    },
+    {
+        "product_name": "HONEY SMOKED TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.30,
+        "stock_quantity": 958
+    },
+    {
+        "product_name": "JERK TURKEY BREAST ",
+        "department_name": "groceries",
+        "price": 5.10,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "NO SALT ADDED TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.30,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "BLACKENED TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.10,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "PANCETTA ROASTED TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 5.10,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "CHIPOTLE CHICKEN BREAST",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "EVERROAST CHICKEN BREAST",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "L/S GOLDEN CLASSIC CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 437
+    },
+    {
+        "product_name": "HICKORY SMOKED CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 419
+    },
+    {
+        "product_name": "ALL AMERICAN BBQ CHICKEN ",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "ROTISSERIE SEASONED CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 438
+    },
+    {
+        "product_name": "BLAZIN BUFFALO CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 440
+    },
+    {
+        "product_name": "LEMON PEPPER CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 439
+    },
+    {
+        "product_name": "MAPLE GLAZED CHICKEN",
+        "department_name": "groceries",
+        "price": 4.90,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "A.N. UNCURED HAM",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 346
+    },
+    {
+        "product_name": "A.N. UNCURED SMOKED HAM",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 348
+    },
+    {
+        "product_name": "A.N. ROAST BEEF",
+        "department_name": "groceries",
+        "price": 7.50,
+        "stock_quantity": 349
+    },
+    {
+        "product_name": "A.N. ROASTED TURKEY",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 326
+    },
+    {
+        "product_name": "A.N. SMOKED TURKEY",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 338
+    },
+    {
+        "product_name": "A.N. TUSCAN TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "A.N. LEMON & HERB TURKEY BREAST",
+        "department_name": "groceries",
+        "price": 6.25,
+        "stock_quantity": 130
+    },
+    {
+        "product_name": "PURE BOLOGNA PORK & BEEF ",
+        "department_name": "groceries",
+        "price": 3.45,
+        "stock_quantity": 320
+    },
+    {
+        "product_name": "LOW-SODIUM BOLOGNA ",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 357
+    },
+    {
+        "product_name": "BEEF BOLOGNA",
+        "department_name": "groceries",
+        "price": 4.00,
+        "stock_quantity": 358
+    },
+    {
+        "product_name": "GARLIC BOLOGNA",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 354
+    },
+    {
+        "product_name": "LIVERWURST NC STRASS",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 368
+    },
+    {
+        "product_name": "SMOKED LIVERWURST NC",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 369
+    },
+    {
+        "product_name": "COOKED SALAMI",
+        "department_name": "groceries",
+        "price": 3.35,
+        "stock_quantity": 325
+    },
+    {
+        "product_name": "BEEF SALAMI",
+        "department_name": "groceries",
+        "price": 4.20,
+        "stock_quantity": 327
+    },
+    {
+        "product_name": "HEADCHEESE SQUARE",
+        "department_name": "groceries",
+        "price": 4.25,
+        "stock_quantity": 303
+    },
+    {
+        "product_name": "OLIVE LOAF",
+        "department_name": "groceries",
+        "price": 3.75,
+        "stock_quantity": 306
+    },
+    {
+        "product_name": "P&P LOAF (Pickle & Pimento)",
+        "department_name": "groceries",
+        "price": 3.75,
+        "stock_quantity": 308
+    },
+    {
+        "product_name": "DUTCH \"OLD FASHION\" LOAF",
+        "department_name": "groceries",
+        "price": 3.65,
+        "stock_quantity": 307
+    },
+    {
+        "product_name": "SPICED HAM OVAL",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 360
+    },
+    {
+        "product_name": "CANADIAN BACON",
+        "department_name": "groceries",
+        "price": 6.35,
+        "stock_quantity": 339
+    },
+    {
+        "product_name": "LEBANON BOLOGNA",
+        "department_name": "groceries",
+        "price": 5.75,
+        "stock_quantity": 781
+    },
+    {
+        "product_name": "DELAFIELD SUMMER SAUSAGE",
+        "department_name": "groceries",
+        "price": 4.45,
+        "stock_quantity": 25
+    },
+    {
+        "product_name": "DILANDRI AC GENOA SALAMI",
+        "department_name": "groceries",
+        "price": 3.75,
+        "stock_quantity": 505
+    },
+    {
+        "product_name": "LITE LIVERWURST",
+        "department_name": "groceries",
+        "price": 3.50,
+        "stock_quantity": 342
+	
+
+    },
+    {
+        "product_name": "PARMA PROSCIUTTO",
+        "department_name": "groceries",
+        "price": 9.95,
+        "stock_quantity": 711
+    },
+    {
+        "product_name": "GOLD PROSCIUTTO",
+        "department_name": "groceries",
+        "price": 7.25,
+        "stock_quantity": 500
+    },
+    {
+        "product_name": "PROSCIUTTO Skls & Shkls",
+        "department_name": "groceries",
+        "price": 7.50,
+        "stock_quantity": 531
+    },
+    {
+        "product_name": "PICCOLO PROSCIUTTO ",
+        "department_name": "groceries",
+        "price": 7.00,
+        "stock_quantity": 530
+    },
+    {
+        "product_name": "SERRANO HAM - Imported from Spain",
+        "department_name": "groceries",
+        "price": 11.4,
+        "stock_quantity": 110
+    },
+    {
+        "product_name": "CHORIZO ESPANOL SALAMI - impt Spain",
+        "department_name": "groceries",
+        "price": 7.20,
+        "stock_quantity": 161
+    },
+    {
+        "product_name": "SOPRESSATA HOT",
+        "department_name": "groceries",
+        "price": 7.25,
+        "stock_quantity": 596
+    },
+    {
+        "product_name": "SOPRESSATA SWEET",
+        "department_name": "groceries",
+        "price": 7.25,
+        "stock_quantity": 597
+    },
+    {
+        "product_name": "SOPRES CALABRESE HOT",
+        "department_name": "groceries",
+        "price": 7.25,
+        "stock_quantity": 868
+    },
+    {
+        "product_name": "MORTADELLA w/ Pist",
+        "department_name": "groceries",
+        "price": 4.30,
+        "stock_quantity": 511
+    },
+    {
+        "product_name": "MORTADELLA w/ Pist SMALL",
+        "department_name": "groceries",
+        "price": 4.30,
+        "stock_quantity": 509
+    },
+    {
+        "product_name": "GENOA SALAMI 1/2",
+        "department_name": "groceries",
+        "price": 5.25,
+        "stock_quantity": 547
+    },
+    {
+        "product_name": "HARD SALAMI 1/2",
+        "department_name": "groceries",
+        "price": 5.00,
+        "stock_quantity": 557
+    },
+    {
+        "product_name": "BIANCO D'ORO DRY SALAME",
+        "department_name": "groceries",
+        "price": 5.25,
+        "stock_quantity": 568
+    },
+    {
+        "product_name": "SLICING PEPPERONI",
+        "department_name": "groceries",
+        "price": 4.00,
+        "stock_quantity": 558
+    },
+    {
+        "product_name": "HOT BUTT CAPPY fiber",
+        "department_name": "groceries",
+        "price": 4.15,
+        "stock_quantity": 137
+    },
+    {
+        "product_name": "HOT CAPPOCOLA NC",
+        "department_name": "groceries",
+        "price": 5.50,
+        "stock_quantity": 172
+    },
+    {
+        "product_name": "SWT CAPPOCOLA NC",
+        "department_name": "groceries",
+        "price": 5.50,
+        "stock_quantity": 178
+    },
+    {
+        "product_name": "PANCETTA 1/2",
+        "department_name": "groceries",
+        "price": 7.00,
+        "stock_quantity": 545
+    }
+]
