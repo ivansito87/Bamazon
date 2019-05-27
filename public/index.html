@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bamazon.com</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light static-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark static-top shadow">
         <div class="container">
 
-            <a class="navbar-brand" href="/"><img class="navbar-brand" src="images/bamazon.png" alt="logo" /></a>
+            <a class="navbar-brand" href="/"><img class="navbar-brand my-0" src="images/Bamazon3.png" alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,18 +29,18 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="h5 nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="h5 nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Orders</a>
+                        <a class="h5 nav-link" href="#">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Account</a>
+                        <a class="h5 nav-link" href="#">My Account</a>
                     </li>
                 </ul>
             </div>
@@ -93,18 +96,18 @@
             <div class="col-8">
                 <div class="card border-0 shadow my-5">
                     <div class="card-body p-5">
-                        <h1 id="tCaption">Search Inventory</h1>
+                        <h1 id="tCaption">Products</h1>
                         <div class="tbl-header">
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <thead>
                                     <tr>
                                         <th class="itemId">Id</th>
-                                        <th>Product Name</th>
+                                        <th class="productName">Product Name</th>
                                         <th>Department</th>
                                         <th>Price</th>
-                                        <th>In Stock</th>
-                                        <th>Buy now</th>
-                                        <th>Qty:</th>
+                                        <!-- <th>In Stock</th> -->
+                                        <th>Qty</th>
+                                        <th class="buyNow">Buy Now</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -122,12 +125,14 @@
                 <div class="row">
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h1 class="py-2">Shopping Cart</h1>
+                            <h1 class="py-2 px-4">Order Total</h1>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-outline-warning">Submit Order</a>
+                        <div class="card-body " id="cardBody">
+                            <!-- <h4 class="card-title text-right">Subtotal&emsp;&emsp;$<span class="text-right" id="subtotal"></span></h4>
+                            <h4 class="card-title text-right">Tax&emsp;&emsp;$<span class="text-right" id="tax"></span></h4>
+                            <hr />
+                            <h3 class="card-title text-right">Total&emsp;&emsp;$<span class="text-right" id="total"></span></h3>
+                            <a href="#" class="btn btn-outline-warning">Submit Order</a> -->
                         </div>
                     </div>
                 </div>
@@ -137,9 +142,25 @@
                             <h1 class="py-2">Shopping Cart</h1>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-outline-warning">Submit Order</a>
+                            <div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="qty">Qty</th>
+                                            <th class="product">Product</th>
+                                            <th class="tprice">Price</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <tbody id="addItems">
+                                            
+                                    </tbody>
+                                </table>
+                            </div>        
                         </div>
                     </div>
                 </div>
