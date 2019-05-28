@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "funfunfun",
+    "username": "b957611d8f7549",
+    "password": "d6a094bd",
     "database": "Bamazon",
-    "host": "127.0.0.1",
+    "host": "us-cdbr-iron-east-02.cleardb.net",
     "dialect": "mysql"
   }
 }
