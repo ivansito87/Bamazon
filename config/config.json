@@ -14,8 +14,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "b957611d8f7549",
-    "password": "d6a094bd",
+    "username": "b826b3b7a90eaf",
+    "password": "a9fd21e9",
     "database": "Bamazon",
     "host": "us-cdbr-iron-east-02.cleardb.net",
     "dialect": "mysql"
