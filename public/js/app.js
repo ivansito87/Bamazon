@@ -3,14 +3,6 @@
 $(() => {
     loadProducts();
 });
-// ===========================================================================>>>>>>>>
-
-
-// Global Varables ==================================================>>>>>>>>>>>>>>>>>>>>>>>
-var subtotal = 0;
-var total = 0;
-var tax = 0;
-//===========================================================================
 
 
 // Function to render all the products in from the database==============================
@@ -30,16 +22,20 @@ var loadProducts = () => {
                             <option value="4">4</option>
                             <option value="5">5</option>
                             </select></td>
-                            <td><button type="button" class="btn btn-outline-warning" data-item="${eachObject.id}"><i class="fas fa-cart-plus"></i></button></td>
+                            <td><button type="button" class="btn btn-outline-warning addToCart" data-item="${eachObject.id}"><i class="fas fa-cart-plus"></i></button></td>
                             </tr>`);
         });
     });
 };
 
-
+// Global Varables ==================================================>>>>>>>>>>>>>>>>>>>>>>>
+var subtotal = 0;
+var total = 0;
+var tax = 0;
+var arrObjects = [];
 
 //function to add to shopping cart from table
-$(document).on("click", ".btn-outline-warning", function () {
+$(document).on("click", ".addToCart", function () {
     
     var itemId = $(this).data().item;
     var quantity = $(this).closest("#itemrow").find("select#exampleFormControlSelect1 option:selected").val();
@@ -50,31 +46,42 @@ $(document).on("click", ".btn-outline-warning", function () {
             $("#cardBody").html(`<h4>Sold out!</h4>
             <h4>The item you are trying to buy is unavailable. Don't worry, we are getting more soon!</h4>`);
         } else {
+            data.stock_quantity -= quantity;
+            arrObjects.push(data)
             subtotal += data.price * quantity;
             tax += (data.price * .06) * quantity;
-            total = (tax + subtotal) * quantity;
+            total = tax + subtotal;
+            $("#startAdding").remove();
+            $("#emptyCar").remove();
             $("#addItems").append(`<tr><td class="qty">${quantity}</td><td>${data.product_name}</td><td class="tprice">$ ${data.price}</td></tr>`);
-            $("#cardBody").html(`<h5 class="card-title text-right">Subtotal&emsp;&emsp;$ ${parseFloat(subtotal).toFixed(2)}</h5>
-                <h5 class="card-title text-right">Tax&emsp;&emsp;$ ${parseFloat(tax).toFixed(2)}</h5>
+            $("#cardBody").html(`<h5 class="card-title text-right text-light">Subtotal&emsp;&emsp;<i class="fas fa-dollar-sign"></i> ${parseFloat(subtotal).toFixed(2)}</h5>
+                <h5 class="card-title text-right text-light">Tax&emsp;&emsp;<i class="fas fa-dollar-sign"></i> ${parseFloat(tax).toFixed(2)}</h5>
                 <hr />
-                <h4 class="card-title text-right">Total&emsp;&emsp;$ ${parseFloat(total).toFixed(2)}</h4>
-                <a class="btn btn-outline-warning btn-block" id="submitOrder">Submit Order</a>`);
+                <h4 class="card-title text-right text-light">Total&emsp;&emsp;<i class="fas fa-dollar-sign"></i> ${parseFloat(total).toFixed(2)}</h4>
+                <a class="btn btn-outline-warning btn-block text-white" id="submitOrder">Submit Order</a>`);
         }
     });
 });
 
 // =============== Function to Update database after submit order
-var submitOrder = () => {
-    $(document).on("click", "#submitOrder", () => {
 
-        var jqxhr = $.post("/order?" + $.param(order), function () {
-        })
-            .done(function () {
-                $("#cart").empty();
-                $("#cart-status").html("<h2>Order complete. Thank you!");
-            })
-            .fail(function () {
-                console.log("womp womp.");
+$(document).on("click", "#submitOrder", () => { 
+    console.log(arrObjects)
+    $("#newDateName").text(`Your total is:  $${parseFloat(subtotal).toFixed(2)}`);
+    $("#newDatePicture").attr("src", "https://images.unsplash.com/photo-1517076731070-13c65bcb2e86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2467&q=80");
+    $("#exampleModalLong").modal("toggle");
+    $("#cardBody").html(`<h1>Thank you for shopping with us today</h1>`);
+    $("#addItems").html(`<h1>We appreciate your business</h1>`);
+    loadProducts();
+        $.ajax({
+            method: "POST",
+            url: "/api/products/",
+            contentType: "application/json",
+            data: JSON.stringify(arrObjects)
+        }).then(function () {
+            window.location.href = "/products";
             });
-    });
-}; 
+});
+
+
+

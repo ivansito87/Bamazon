@@ -19,7 +19,33 @@ module.exports = function(app) {
         res.json(dbPost);
       });
   });
+    
+    
+  // PUT route for updating Products
+    app.post("/api/products/", function (req, res) {
+        console.log(req.body);
+        var arrOfObjects = req.body;
+        arrOfObjects.forEach(function (element) { 
+            db.Product.update(
+                {
+                    stock_quantity: element.stock_quantity
+                }, {
+                    where: {
+                        id: element.id
+                    }
+                })
+        });
 
+    // db.Product.update(newData,
+    //   {
+    //     where: {
+    //       id: req.body.id
+    //     }
+    //   })
+    //   .then(function(dbPost) {
+    //     res.json(dbPost);
+    //   });
+  });
     // app.get('/api/5', (req, res) => {
     //     let query;
     //     if (req.params.userId) {
@@ -38,6 +64,7 @@ module.exports = function(app) {
     
 //   Get route for returning posts of a specific category
     app.get("/api/products/:id", function (req, res) {
+        
       db.Product.findOne({
       where: {
         id: req.params.id

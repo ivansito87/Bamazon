@@ -8,6 +8,11 @@
   background-size: cover;
 }
 
+.display-2 {
+  font-family: 'Lalezar', cursive;
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+}
+
 #tCaption {
   color: #fff;
   font-size: 40px;
@@ -25,6 +30,19 @@ h1 {
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
+  font-family: 'Lalezar', cursive;
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+}
+
+#connect {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+  font-family: 'Lalezar', cursive;
+}
+
+h5, h4 {
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
 }
 
 table {
@@ -58,7 +76,8 @@ th {
 
 .productName {
   width: 220px;
-} 
+}
+
 .qty {
   width: 50px;
 }
@@ -73,22 +92,8 @@ td {
   text-transform: lowercase;
 }
 
-/* demo styles */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-/* to create the backgorud image to use later *******************/
-
-/* body {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-} */
-
 body {
   background: linear-gradient(to right, #FF9900, rgb(20, 110, 180));
-  font-family: 'Exo 2', sans-serif;
 }
 
 section {
@@ -167,10 +172,20 @@ section {
   background-color: transparent !important;
   width: 60px;
   height: 30px;
+  color: white;
+}
+
+.navbar-brand {
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1) !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1) !important;
+  font-size: 20px;
 }
 
 .tprice {
@@ -181,9 +196,230 @@ section {
   text-align: left !important;
 }
 
+.card-body {
+  box-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+  border-radius: none !important;
+}
+
 .card-header {
   padding: 10px 10px;
   padding-bottom: 0px;
   background: linear-gradient(to right, #FF9900, rgb(20, 110, 180));
   border-bottom: 4px solid rgb(20, 110, 180);
+}
+
+.navbar {
+  padding: 0px 0px !important;
+}
+
+.fa-md:hover {
+  background-color: rgba(204, 243, 177, 0.938);
+}
+
+/* 
+#connect:before, #connect:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: 800ms ease all;
+}
+
+#connect:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+#connect:hover:before, #connect:hover:after {
+  width: 100%;
+  transition: 1000ms ease all;
+} */
+
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+
+
+  background: linear-gradient(to right, #FF9900, rgb(20, 110, 180));
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+  animation-name: bounceIn;
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+.fade {
+  transition: opacity .4s linear;
+}
+
+footer.bg-light {
+  background: linear-gradient(to right, #FF9900, rgb(20, 110, 180));
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2") format("truetype"), url("fhttps://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.svg?3qkin2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.social-networks {
+  margin: 0 0 35px;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.social-networks li {
+  display: inline-block;
+}
+
+.social-networks a {
+  display: block;
+  position: relative;
+  margin: 0 7px;
+  width: 68px;
+  height: 68px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-networks a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+  border-radius: 100px;
+  background-color: #1f2027;
+  transition: all 400ms;
+}
+
+.social-networks a:after {
+  position: relative;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #fff;
+  font-size: 34px;
+  line-height: 68px;
+}
+
+.social-networks a:hover, .social-networks a:focus {
+  text-decoration: none;
+}
+
+.social-networks.spin-icon a:hover:after, .social-networks.spin-icon a:focus:after {
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+.social-networks.square a:hover:before, .social-networks.square a:focus:before {
+  border-radius: 0;
+}
+
+.social-networks.bounce a:hover, .social-networks.bounce a:focus {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+}
+
+.social-networks .icon-linkedin:after {
+  content: "";
+}
+
+.social-networks .icon-linkedin:hover:before, .social-networks .icon-linkedin:focus:before {
+  background: #0077b5;
+}
+
+.social-networks .icon-facebook:after {
+  content: "";
+}
+
+.social-networks .icon-facebook:hover:before, .social-networks .icon-facebook:focus:before {
+  background: #3b5998;
+}
+
+.social-networks .icon-twitter:after {
+  content: "";
+}
+
+.social-networks .icon-twitter:hover:before, .social-networks .icon-twitter:focus:before {
+  background: #00b0ed;
+}
+
+.social-networks .icon-github:after {
+  content: "";
+}
+
+.social-networks .icon-github:hover:before, .social-networks .icon-github:focus:before {
+  background: #4183c4;
+}
+
+.social-networks .icon-instagram:after {
+  content: "";
+}
+
+.social-networks .icon-instagram:hover:before, .social-networks .icon-instagram:focus:before {
+  background: #3f729b;
+}
+
+.social-networks .icon-vimeo:after {
+  content: "";
+}
+
+.social-networks .icon-vimeo:hover:before, .social-networks .icon-vimeo:focus:before {
+  background: #1ab7ea;
+}
+
+.social-networks .icon-twitch:after {
+  content: "";
+}
+
+.social-networks .icon-twitch:hover:before, .social-networks .icon-twitch:focus:before {
+  background: #6441a5;
+}
+
+.social-networks .icon-pinterest:after {
+  content: "";
+}
+
+.social-networks .icon-pinterest:hover:before, .social-networks .icon-pinterest:focus:before {
+  background: #cc2127;
 }

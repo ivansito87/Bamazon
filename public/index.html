@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bamazon.com</title>
+    <link rel="icon" href="favicon.ico?v=1.1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -59,24 +61,24 @@
                 <div class="carousel-item active"
                     style="background-image: url('https://i1.wp.com/doist.com/blog/wp-content/uploads/sites/3/2016/10/Banner_image@2x.png?fit=1920%2C1620&quality=85&strip=all&ssl=1')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="display-3">Deals and New Products Every Day</h3>
-                        <p class="lead">This is a description for the first slide.</p>
+                        <h3 class="display-2">Deals and New Products Every Day</h3>
+                        <h4>Find deals every day and save money</h4>
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item"
                     style="background-image: url('https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F801805842%2F960x0.jpg%3Ffit%3Dscale')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="display-3">Become A Member and get Special Discounts</h3>
-                        <p class="lead">This is a description for the second slide.</p>
+                        <h3 class="display-2">Become A Member and get Special Discounts</h3>
+                        <h4>Sign up for premium membership and get special offers.</h4>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
                 <div class="carousel-item"
                     style="background-image: url('https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2018/03/p-1-alexa-laugh-1.jpg')">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="display-3">Look no further you can find it here</h3>
-                        <p class="lead">This is a description for the third slide.</p>
+                        <h3 class="display-2">Look no further you can find it here</h3>
+                        <h4>anything you can think of you can find it here.</h4>
                     </div>
                 </div>
             </div>
@@ -96,14 +98,14 @@
             <div class="col-8">
                 <div class="card border-0 shadow my-5">
                     <div class="card-body p-5">
-                        <h1 id="tCaption">Products</h1>
+                        <h1 id="tCaption"><i class="fas fa-store-alt"></i>&emsp;Products</h1>
                         <div class="tbl-header">
                             <table cellpadding="0" cellspacing="0" border="0">
                                 <thead>
                                     <tr>
                                         <th class="itemId">Id</th>
                                         <th class="productName">Product Name</th>
-                                        <th>Department</th>
+                                        <th>Dept</th>
                                         <th>Price</th>
                                         <!-- <th>In Stock</th> -->
                                         <th>Qty</th>
@@ -125,39 +127,34 @@
                 <div class="row">
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h1 class="py-2 px-4">Order Total</h1>
+                            <h1 class="py-2 px-4"><i class="fas fa-money-check-alt"></i>&emsp;Order Total</i></h1>
                         </div>
-                        <div class="card-body " id="cardBody">
-                            <!-- <h4 class="card-title text-right">Subtotal&emsp;&emsp;$<span class="text-right" id="subtotal"></span></h4>
-                            <h4 class="card-title text-right">Tax&emsp;&emsp;$<span class="text-right" id="tax"></span></h4>
-                            <hr />
-                            <h3 class="card-title text-right">Total&emsp;&emsp;$<span class="text-right" id="total"></span></h3>
-                            <a href="#" class="btn btn-outline-warning">Submit Order</a> -->
+                        <div class="card-body text-light" id="cardBody">
+                            <h3 id="startAdding">Please add items to your cart by clicking the shopping cart button</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h1 class="py-2">Shopping Cart</h1>
+                            <h1 class="py-2"><i class="fas fa-shopping-cart"></i>&emsp;Shopping Cart</h1>
                         </div>
                         <div class="card-body">
                             <div>
                                 <table>
                                     <thead>
-                                        <tr>
+                                        <tr class="text-light">
                                             <th class="qty">Qty</th>
                                             <th class="product">Product</th>
-                                            <th class="tprice">Price</th>
-                                            
+                                            <th class="tprice">Price</th>   
                                         </tr>
                                     </thead>
                                 </table>
                             </div>
                             <div>
                                 <table>
-                                    <tbody id="addItems">
-                                            
+                                    <tbody class="text-light" id="addItems">
+                                        <h2 class="text-light" id="emptyCar">Your cart is empty</h2>
                                     </tbody>
                                 </table>
                             </div>        
@@ -168,39 +165,64 @@
         </div>
     </div>
 
+<!--=============== modal ======================-->
 
+<!-- <a href="#costumModal7" role="button" class="btn btn-default" data-toggle="modal">
+    whirlIn
+</a> -->
+<div class="modal animated bounceIn in" id="exampleModalLong" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLongTitle">Please confirm your order</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1 id="newDateName"></h1>
+                <hr />
+                <p id="aboutDate"></p>
+                <img class="rounded mx-auto d-block img-fluid" alt="New_Date" id="newDatePicture">
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="submit">Proceed to checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--=============== modal ======================-->
 
     <!-- follow me template -->
 
 
-    <div class="made-with-love">
-        <!-- Made with
-        <i>♥</i> by
-        <a target="_blank" href="https://ivanrendon.dev">Ivan Rendon</a> -->
-        <a id="connect" class="text-align-center mx-2" href="https://github.com/ivansito87" target="_blank">
-            <i class="fab fa-github fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://gt.bootcampcontent.com/ivan.rendon"
-            target="_blank">
-            <i class="fab fa-gitlab fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://www.facebook.com/ivan.rendon.319" target="_blank">
-            <i class="fab fa-facebook fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://www.snapchat.com/add/alexivansito" target="_blank">
-            <i class="fab fa-snapchat fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://www.pinterest.com/ivansito87/" target="_blank">
-            <i class="fab fa-pinterest fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://twitter.com/IvanRen19266618" target="_blank">
-            <i class="fab fa-twitter fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://www.linkedin.com/in/ivan-rendon-368b53174/"
-            target="_blank">
-            <i class="fab fa-linkedin fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2"
-            href="https://stackoverflow.com/users/11216672/ivansito87?tab=profile" target="_blank">
-            <i class="fab fa-stack-overflow fa-md"></i></a>
-        <a id="connect" class="text-align-center mx-2" href="https://codepen.io/ivansito87/" target="_blank">
-            <i class="fab fa-codepen fa-md"></i></a>
-        <p class="h6 p-1 m-0 text-center text-dark">Copyright &copy; Ivan Rendon 2019</p>
-
-    </div>
+    <footer class="bg-light">
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="h1 text-center">
+                        <p id="connect" class="h5 pb-3 text-center text-light">Connect with me!</p>
+                        <ul class="social-networks square spin-icon">
+                            <li><a href="https://www.linkedin.com/in/ivan-rendon-368b53174/" class="icon-linkedin">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/ivan-rendon-368b53174/" class="icon-twitter">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/ivan.rendon.319" class="icon-facebook">Facebook</a></li>
+                            <li><a href="https://github.com/ivansito87" class="icon-twitch">Twitch</a></li>
+                            <li><a href="https://github.com/ivansito87" class="icon-github">GitHub</a></li>
+                            <li><a href="https://www.pinterest.com/ivansito87/" class="icon-pinterest">Pinterest</a></li>
+                            <li><a href="https://stackoverflow.com/users/11216672/ivansito87?tab=profile" class="icon-instagram">Instagram</a></li>
+                            <li><a href="https://gt.bootcampcontent.com/ivan.rendon" class="icon-vimeo">Vimeo</a></li>
+                        </ul>
+                        <p id="connect" class="h5 text-center text-light mb-4 mt-0">Copyright &copy; Ivan Rendon 2019</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="js/app.js" type="text/javascript"></script>
