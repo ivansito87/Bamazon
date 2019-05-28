@@ -58,7 +58,6 @@ table {
   height: 1000px;
   overflow-x: auto;
   margin-top: 0px;
-  /* border: 2px solid rgba(255, 255, 255, 0.6); */
 }
 
 th {
@@ -398,3 +397,5 @@ footer.bg-light {
 .social-networks .icon-pinterest:hover:before, .social-networks .icon-pinterest:focus:before {
   background: #cc2127;
 }
+
+/* hello */
