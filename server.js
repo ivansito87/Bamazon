@@ -29,6 +29,7 @@ app.use(express.json());
 
 //Static directory to be able to access css and other files images,CSS,JavaScript
 app.use(express.static("./public"));
+app.use(favicon(path.join(__dirname, "/public/images/my_ir_favicon.png")));
 
 
 
