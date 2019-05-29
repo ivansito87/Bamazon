@@ -15,7 +15,7 @@ var favicon = require('serve-favicon');  // Favicon to track my Icon
 var app = express();
 
 // **** We select the port we want out server to listen
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // Models
 // ================== Require our models =================================
@@ -29,7 +29,7 @@ app.use(express.json());
 
 //Static directory to be able to access css and other files images,CSS,JavaScript
 app.use(express.static("./public"));
-app.use(favicon(path.join(__dirname, "/public/images/my_ir_favicon.png")));
+app.use(favicon(path.join(__dirname, "./public/images/my_ir_favicon.png")));
 
 
 
